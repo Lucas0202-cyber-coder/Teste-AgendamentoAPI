@@ -38,7 +38,8 @@ namespace Agendamento_Api.Controllers
             return Ok(user);
 
         }
-
+        
+        [AllowAnonymous]
         [HttpPost]
         public IActionResult CreateUser(Users user)
         {
